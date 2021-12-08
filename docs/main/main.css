@@ -29,19 +29,19 @@ body{
 .sidebar__header a span{
     font-size: .7em;
 }
-.sidebar__header a span, .sidebar__course101 a strong, .sidebar__course201 a strong, .sidebar__group p{
+.sidebar__header a span, .sidebar__course101 a strong, .sidebar__course201 a strong, .sidebar__group p, .sidebar__lessons a strong{
     display: block;
     color: #9799A7;
 }
-.sidebar__header a, .sidebar__header a abbr, .sidebar__course101 a, .sidebar__course201 a, .sidebar__group a{
+.sidebar__header a, .sidebar__header a abbr, .sidebar__course101 a, .sidebar__course201 a, .sidebar__group a, .sidebar__lessons a{
     color: #fff;
     text-decoration: none;
     transition: .7s;
 }
-.sidebar__header a:hover, .sidebar__course101 a:hover, .sidebar__course201 a:hover, .sidebar__group a:hover{
+.sidebar__header a:hover, .sidebar__course101 a:hover, .sidebar__course201 a:hover, .sidebar__group a:hover, .sidebar__lessons a:hover{
     color: #2DB34A;
 }
-.sidebar__course101, .sidebar__course201, .sidebar__button{
+.sidebar__course101, .sidebar__course201, .sidebar__button, .sidebar__lessons{
     display: inline-block;
     padding: 0.5em;
     font-size: 1em;
@@ -302,4 +302,67 @@ body{
 .twitter__button:hover{
     color: #fff !important;
     background-color: #016fa7;
+}
+.content__button{
+    text-align: center;
+    margin: auto;
+}
+.content__button button{
+    text-decoration: none;
+    background-color: #0087CC;
+    color: #fff;
+    border: none;
+    border-radius: .5em;
+    padding: 1.2em;
+    font-size: 1em;
+    cursor: pointer;
+    transition: .4s;
+    margin: 0em 2em 0em 0em;
+}
+.content__button button:hover{
+    background-color: #FF7B29;
+}
+.content__button{
+    margin-bottom: 2em;
+}
+hr{
+    border: 1px solid #c7c7c7;
+    margin-top: 1.5em;
+    margin-bottom: 1.5em;
+}
+.newsletter-container{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+}
+.newsletter-container>p{
+    margin: 2em 0;
+}
+.newsletter-container>p>a{
+    color: #0087cc;
+}
+.newsletter-container>div>img{
+    filter: grayscale(100%);
+    height: 131px;
+    border-radius: 50%;
+    width: auto;
+    margin: 2em;
+}
+.newsletter-container__button{
+    display: block;
+    text-decoration: none;
+    background-color: #0087CC;
+    color: #fff;
+    border: none;
+    border-radius: .5em;
+    padding: .8em;
+    font-size: 1em;
+    cursor: pointer;
+    transition: .4s;
+    margin: 0em 2em 0em 0em;
+}
+.newsletter-container__button:hover{
+    background-color: #FF7B29;
+}
+.newsletter-container__bottom-text{
+    font-size: .7em;
 }
