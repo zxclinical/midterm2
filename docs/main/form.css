@@ -102,6 +102,8 @@ a{
 }
 
 .wrapper .sign_up button{
+	cursor: pointer;
+	border: none;
 	margin-top: 20px;
 	background:  #0087cc;
 	border-radius: 6px;
@@ -114,5 +116,15 @@ a{
 }	
 
 .wrapper .sign_up button:hover{
+	transition: 0.4s;
     background-color: #f05c1c;
+}
+.wrapper .sign_up .input_field small{
+    position: absolute;
+    color: var(--errors);
+    font-size: 12px;
+    font-weight: 600;
+    right: 0%;
+    top: 85%;
+    visibility: hidden;
 }
