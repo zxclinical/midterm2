@@ -132,3 +132,5 @@ if(form){
     const fields = ["username", "password"];
     const validator = new login(form, fields);
 }
+}
+}
