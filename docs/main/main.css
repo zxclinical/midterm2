@@ -107,7 +107,8 @@ body{
     font-weight: 400;
     margin: 1em 2em;
 }
-.sidebar__header_button a, .container__list-button{
+.sidebar__header_button a, .container__list-button, .sidebar__header_button button{
+    
     display: block;
     text-decoration: none;
     background-color: #0087CC;
@@ -120,7 +121,7 @@ body{
     transition: .7s;
     margin: 1em 3em 0em 3em;
 }
-.sidebar__header_button a:hover, .container__list-button:hover{
+.sidebar__header_button a:hover, .sidebar__header_button button:hover, .container__list-button:hover{
     background-color: #FF7B29;
 }
 .container{
@@ -235,7 +236,7 @@ body{
     width: auto;
     padding: 1.5em 1.5em 0 1.5em;
 }
-.newsletter-box>h2{
+.newsletter-box>h2, .news-block h2{
     margin: 0;
     text-align: left;
     color: #2DB34A;
@@ -266,16 +267,35 @@ body{
     font-size: .9em;
     width: 15vw;
 }
-.newsletter-box>input:focus{
+.admin-panel>form>div>input{
+    padding: 1em;
+    border: 1px solid #c7c7c7;
+    border-radius: .5em;
+    background: none;
+    font-size: .9em;
+    width: 20vw;
+}
+.admin-panel>form>input{
+    padding: .5em;
+    border: 1px solid #c7c7c7;
+}
+.newsletter-box>input:focus, .admin-panel>form>div>textarea:focus, .admin-panel>form>div>input:focus{
     outline: none !important;
     border: 1px solid #0087CC;
 }
-.empty-box{
+.admin-panel>form>div>textarea{
+    padding: 1em;
+    border: 1px solid #c7c7c7;
+    border-radius: .5em;
+    margin: .5em 0 0 0;
+}
+.admin-panel{
     margin: 0em 2em 2em 2em;
     border: 2px solid #c7c7c7;
     border-radius: .5em;
     width: auto;
-    padding: 1.5em 1.5em 0 1.5em;
+    padding: 1.5em;
+    display: none;
 }
 .footer{
     background-color: #EAEAED;
@@ -307,19 +327,19 @@ body{
     text-align: center;
     margin: auto;
 }
-.content__button button{
+.content__button button, .admin-panel>form>input{
     text-decoration: none;
     background-color: #0087CC;
     color: #fff;
     border: none;
     border-radius: .5em;
-    padding: 1.2em;
+    padding: .7em 1em;
     font-size: 1em;
     cursor: pointer;
     transition: .4s;
     margin: 0em 2em 0em 0em;
 }
-.content__button button:hover{
+.content__button button:hover, .admin-panel>form>input:hover{
     background-color: #FF7B29;
 }
 .content__button{
@@ -365,4 +385,11 @@ hr{
 }
 .newsletter-container__bottom-text{
     font-size: .7em;
+}
+.news-block{
+    margin: 0em 2em 2em 2em;
+    border: 2px solid #c7c7c7;
+    border-radius: .5em;
+    width: auto;
+    padding: 1.5em;
 }
