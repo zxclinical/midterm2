@@ -393,3 +393,60 @@ hr{
     width: auto;
     padding: 1.5em;
 }
+.row{
+    display: grid;
+    grid-template-columns: .5fr 1fr;
+}
+.client-forms{
+    margin: 1em;
+    padding: 1em;
+    border: 2px solid #c7c7c7;
+    text-align: left;
+}
+.client-forms>form>div{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 1em;
+}
+.client-forms>form>div>input{
+    border-radius: .2em;
+}
+.client-forms>form>button{
+    width: 5em;
+    background:none;
+    padding: .5em;
+    margin-left: 1em;
+    cursor: pointer;
+    border: 2px solid #0087CC;
+    border-radius: .5em;
+    transition: .5s;
+}
+.client-forms>form>button:hover{
+    background: #0087CC;
+    color: #fff;
+}
+.table{
+    margin: 1em;
+    padding: 1em;
+    text-align: center;
+}
+.table thead th:not(:last-child){
+    background-color: #ccc;
+}
+.table thead th:not(:last-child), .table tbody tr td:not(:last-child){
+    padding: 1em;
+    border-right: 2px solid #ccc;
+}
+.table tbody tr td:not(:last-child){
+    border-bottom: 2px solid #ccc;
+}
+.table tbody tr td:first-child{
+    border-left: 2px solid #ccc;
+}
+.table a{
+    color: #fff;
+    background-color: #0087CC;
+    cursor: pointer;
+    padding: .5em;
+    border-radius: .5em;
+}
