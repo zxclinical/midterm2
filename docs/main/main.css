@@ -411,7 +411,7 @@ hr{
 .client-forms>form>div>input{
     border-radius: .2em;
 }
-.client-forms>form>button{
+.client-forms>form>button, .client-forms>form>a{
     width: 5em;
     background:none;
     padding: .5em;
@@ -420,8 +420,11 @@ hr{
     border: 2px solid #0087CC;
     border-radius: .5em;
     transition: .5s;
+    font-size: .8em;
+    text-decoration: none;
+    color: #000;
 }
-.client-forms>form>button:hover{
+.client-forms>form>button:hover, .client-forms>form>a:hover{
     background: #0087CC;
     color: #fff;
 }

@@ -65,3 +65,11 @@ function onDelete(td){
         resetForm()
     }
 }
+
+function updateState(course){
+    localStorage.setItem("courses", JSON.stringify(course));
+}
+
+function getCourses(){
+    return JSON.parse(localStorage.getItem("courses"));
+}
