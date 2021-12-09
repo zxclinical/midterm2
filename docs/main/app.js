@@ -1,22 +1,3 @@
-$(document).ready(function(){
-	$(".register").hide();
-	$(".login_li").addClass("active");
-
-	$(".login_li").click(function(){
-		$(this).addClass("active")
-		$(".register_li").removeClass("active");
-		$(".login").show();
-		$(".register").hide();
-	});
-
-	$(".register_li").click(function(){
-		$(this).addClass("active")
-		$(".login_li").removeClass("active");
-		$(".register").show();
-		$(".login").hide();
-	});
-});
-
 class login{
     constructor(form, fields){
         this.form = form;
@@ -91,6 +72,11 @@ class login{
 const form = document.querySelector(".sign_up");
 
 if(form){
-    const fields = ["username", "password", "username2", "password2", "email"];
+    const fields = ["username", "password", "email"];
+    const validator = new login(form, fields);
+}
+
+if(form){
+    const fields = ["username", "password"];
     const validator = new login(form, fields);
 }

@@ -62,16 +62,11 @@ a{
 	display: inline-block;
 	margin: 5px;
 	padding: 5px 30px;
-	cursor: pointer;
 	background: #2db34a;
 	border-radius: 33px;
     color:#fff;
 }
 
-.wrapper .sign_up .forms ul li.active{
-	background-color: #f05c1c;
-	border-radius: 5px;
-}
 
 .wrapper .sign_up .register,
 .wrapper .sign_up .login{
