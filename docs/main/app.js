@@ -19,6 +19,8 @@ $(document).ready(function () {
 
 class login {
     constructor(form, fields) {
+class login{
+    constructor(form, fields){
         this.form = form;
         this.fields = fields;
         this.validateonSubmit();
@@ -120,4 +122,13 @@ function runAdmin(){
     adminButton.innerHTML = "Welcome, Admin";
     let adminPanel = document.getElementById("admin-panel");
     adminPanel.style.display = "block";
+}
+if(form){
+    const fields = ["username", "password", "email"];
+    const validator = new login(form, fields);
+}
+
+if(form){
+    const fields = ["username", "password"];
+    const validator = new login(form, fields);
 }
