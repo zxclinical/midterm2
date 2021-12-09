@@ -395,13 +395,17 @@ hr{
 }
 .row{
     display: grid;
-    grid-template-columns: .5fr 1fr;
+    grid-template-columns: 1fr 2fr .9fr;
+}
+.row>.side-image{
+    height: 100vh;
 }
 .client-forms{
     margin: 1em;
     padding: 1em;
     border: 2px solid #c7c7c7;
     text-align: left;
+    height: 30vh;
 }
 .client-forms>form>div{
     display: grid;
