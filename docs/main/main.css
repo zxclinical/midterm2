@@ -7,7 +7,7 @@ body{
     overflow-x: hidden;
 }
 .side-image{
-    background-image: url('../images/triangles.png');
+    background-image: url('../images/triangles.svg');
     background-repeat: no-repeat;
     background-size: 40vw;
 }
