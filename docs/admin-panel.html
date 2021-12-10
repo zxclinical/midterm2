@@ -6,13 +6,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <link rel="stylesheet" href="main/main.css">
 </head>
 
 <body>
     <div class="row">
-        <div class="client-forms">
-            <form autocomplete="off" onsubmit="event.preventDefault();submitForm();">
+        <div class="client-forms animate__animated animate__backInLeft">
+            <form class="animate__animated animate__backInLeft" autocomplete="off" onsubmit="event.preventDefault();submitForm();">
                 <div>
                     <label for="clientId">ID</label>
                     <input type="number" id="clientId">
@@ -33,7 +34,7 @@
                 <a href="index.html">Home</a>
             </form>
         </div>
-        <div class="clients-table">
+        <div class="clients-table animate__animated animate__backInDown">
             <table class="table" id="clientsTable">
                 <thead>
                     <th>Index</th>
